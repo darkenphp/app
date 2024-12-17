@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/darkenphp/framework.git",
-                "reference": "f1b8d514ffa36b430d52e49edd078189ca648fd6"
+                "reference": "c5d457e7b6e0f330ace5040ea75ae69c5d41fa6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darkenphp/framework/zipball/f1b8d514ffa36b430d52e49edd078189ca648fd6",
-                "reference": "f1b8d514ffa36b430d52e49edd078189ca648fd6",
+                "url": "https://api.github.com/repos/darkenphp/framework/zipball/c5d457e7b6e0f330ace5040ea75ae69c5d41fa6d",
+                "reference": "c5d457e7b6e0f330ace5040ea75ae69c5d41fa6d",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/darkenphp/framework/issues",
                 "source": "https://github.com/darkenphp/framework/tree/main"
             },
-            "time": "2024-12-17T19:07:56+00:00"
+            "time": "2024-12-17T19:32:34+00:00"
         },
         {
             "name": "nikic/php-parser",
