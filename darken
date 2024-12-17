@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Darken\Console\Application;
+use App\Config;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$config = new Config(
+    rootDirectoryPath: getcwd(),
+);
+
+$app = new Application($config);
+$app->run();
