@@ -1,4 +1,7 @@
 {
+    "name": "darkenphp/app",
+    "description": "A PHP framework with a twist—think Nuxt.js and Astro had a PHP baby, but without the node_modules drama, npm meltdowns, or yarn tantrums. ",
+    "type": "project",
     "require": {
         "darkenphp/framework": "dev-main"
     },

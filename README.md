@@ -4,6 +4,6 @@ A PHP framework with a twist—think Nuxt.js and Astro had a PHP baby, but witho
 
 Auto-magic? Nope, we’re not wizards. Darken needs to compile while you work your magic or at least once before you hit deploy. Oh, and when you create a new project, you won’t be greeted by a junk drawer of files and folders—just the bare essentials, like a tidy minimalist's dream.
 
-## Vercel
+## Vercel
 
 <a href="https://vercel.com/new/clone?repository-url=https://github.com/darkenphp/app"><img src="https://vercel.com/button"></a>

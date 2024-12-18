@@ -49,15 +49,16 @@ class Config implements ConfigInterface, ContainerSericeInterface
         ];
     }
 
+    /**
+     * This is the right place to register your services
+     * this can by any class you like to inject later
+     * in your components or pages.
+     * if you don't need to inject any service, you can
+     * remove this method and remove the interface from
+     * this class (ContainerSericeInterface).
+     */
     public function containers(ContainerService $service): ContainerService
     {
-        // This is the right place to register your services
-        // this can by any class you like to inject later
-        // in your components or pages.
-        // if you don't need to inject any service, you can
-        // remove this method and remove the interface from
-        // this class (ContainerSericeInterface).
-
         return $service
             ->register(new Db(
                 host: $this->env('DB_HOST', 'localhost'),
