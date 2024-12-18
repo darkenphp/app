@@ -8,23 +8,20 @@ Auto-magic? Nope, we’re not wizards. Darken needs to compile while you work yo
 
 Follow these steps to set up and run the project locally:
 
-1. Install Dependencies
-Install the necessary dependencies using Composer:
+1. **Install Dependencies:** Install the necessary dependencies using Composer:
 
 ```bash
 composer install
 ```
 
-2. Start the Development Server
-Launch the development server with the following command:
+2. **Start the Development Server:** Launch the development server with the following command:
 
 
 ```bash
 composer dev
 ```
 
-3. Access the Application
-Once the server is running, open your browser and navigate to:
+3. **Access the Application:** Once the server is running, open your browser and navigate to:
 
 ```
 http://localhost:8009
