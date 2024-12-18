@@ -10,10 +10,5 @@ include __DIR__ . '/../vendor/autoload.php';
 $config = new Config(
     rootDirectoryPath: dirname(__DIR__),
 );
-
-$app = new Application($config);
-
-// register a container for di
-$app->addContainer(Db::class, new Db('localhost', 'root', 'password', 'darken'));
-
-$app->run();
+(new Application($config))
+    ->run();

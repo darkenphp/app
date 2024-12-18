@@ -1,5 +1,4 @@
 <?php
-
 use Build\components\Alert;
 use Build\components\Layout;
 ?>

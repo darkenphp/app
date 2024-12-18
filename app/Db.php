@@ -2,6 +2,8 @@
 
 namespace App;
 
+use PDOStatement;
+
 class Db
 {
     public function __construct(private string $host, private string $username, private string $password, private string $database)
@@ -17,11 +19,10 @@ class Db
         return new \PDO("mysql:host={$this->host};dbname={$this->database}", $this->username, $this->password);
     }
 
-    public function query(string $sql): array
+    public function query(string $sql): PDOStatement
     {
         $pdo = $this->connect();
-        $stmt = $pdo->query($sql);
-        return $stmt->fetchAll();
+        return $pdo->query($sql);
     }
 
     public function debug(): string

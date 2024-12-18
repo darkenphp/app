@@ -10,5 +10,5 @@ $config = new Config(
     rootDirectoryPath: getcwd(),
 );
 
-$app = new Application($config);
-$app->run();
+(new Application($config))
+    ->run();
