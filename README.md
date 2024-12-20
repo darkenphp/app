@@ -4,6 +4,14 @@ A PHP framework with a twist—think Nuxt.js and Astro had a PHP baby, but witho
 
 Auto-magic? Nope, we’re not wizards. Darken needs to compile while you work your magic or at least once before you hit deploy. Oh, and when you create a new project, you won’t be greeted by a junk drawer of files and folders—just the bare essentials, like a tidy minimalist's dream.
 
+## Creating a New Project
+
+To create a new project, run the following command in your terminal:
+
+```bash
+composer create-project darkenphp/app folder-name-to-create-app "dev-main"
+```
+
 ## Local Development
 
 Follow these steps to set up and run the project locally:
