@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30020246cd3e045997aa09e37a8a93e4",
+    "content-hash": "0487ae7396d7ba2483d7c455df1e30ad",
     "packages": [
         {
             "name": "darkenphp/framework",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/darkenphp/framework.git",
-                "reference": "61f1b6195a99ea5ec96ed42d71da89350f8c652e"
+                "reference": "ca1fe9b5992d9f65c57db01d71604e8ba6844e39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darkenphp/framework/zipball/61f1b6195a99ea5ec96ed42d71da89350f8c652e",
-                "reference": "61f1b6195a99ea5ec96ed42d71da89350f8c652e",
+                "url": "https://api.github.com/repos/darkenphp/framework/zipball/ca1fe9b5992d9f65c57db01d71604e8ba6844e39",
+                "reference": "ca1fe9b5992d9f65c57db01d71604e8ba6844e39",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.65",
                 "phpstan/phpstan": "^2.0",
-                "phpunit/phpunit": "^11.5"
+                "phpunit/phpunit": "^11"
             },
             "default-branch": true,
             "type": "library",
@@ -58,7 +58,7 @@
                 "issues": "https://github.com/darkenphp/framework/issues",
                 "source": "https://github.com/darkenphp/framework/tree/main"
             },
-            "time": "2024-12-18T20:44:09+00:00"
+            "time": "2024-12-20T12:02:02+00:00"
         },
         {
             "name": "filp/whoops",
@@ -736,7 +736,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "ext-json": "*"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

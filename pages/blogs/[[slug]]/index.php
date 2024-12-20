@@ -1,20 +1,23 @@
 <?php
+
+use Build\components\Layout;
+
 $page = new class {
     #[Darken\Attributes\RouteParam('slug')]
     public string $slug;
 };
+
+$layout = (new Layout('Blog Detail ' . $page->slug))->openContent();
 ?>
-
-<h1>Resolved Slug: <?= $page->slug ?></h1>
-<div id="content">
-    loading blogs from api
+<p>Fetching the Blogs from the API for slug <?= $page->slug ?></p>
+<div id="content" style="margin-top:20px; border:1px solid #ccc; padding:20px;">
+    Loading...
 </div>
-
 <script>
-    document.getElementById('content').innerText = 'Loading...';
     fetch('/blogs/<?= $page->slug ?>/api')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('content').innerText = `Async from the Api: ${data.slug} with time ${data.time}`;
-        });
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('content').innerHTML = `<h1>${data.title}<h1><hr style="margin-bottom:20px;" /><div class="blog-content">${data.content}</div>`;
+    });
 </script>
+<?= $layout->closeContent(); ?>
