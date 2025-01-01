@@ -1,7 +1,7 @@
 <?php
 $alert = new class {
 
-    #[Darken\Attributes\Param()]
+    #[Darken\Attributes\ConstructorParam]
     public string $message;
 }
 ?>
