@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/darkenphp/framework.git",
-                "reference": "a5883d975315d4c7c86172979310b92c7043646c"
+                "reference": "c27fd149f93a1ebad9cb61bf51c03b819d606d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darkenphp/framework/zipball/a5883d975315d4c7c86172979310b92c7043646c",
-                "reference": "a5883d975315d4c7c86172979310b92c7043646c",
+                "url": "https://api.github.com/repos/darkenphp/framework/zipball/c27fd149f93a1ebad9cb61bf51c03b819d606d96",
+                "reference": "c27fd149f93a1ebad9cb61bf51c03b819d606d96",
                 "shasum": ""
             },
             "require": {
@@ -25,6 +25,7 @@
                 "nikic/php-parser": "^5.3",
                 "nyholm/psr7": "^1.8",
                 "nyholm/psr7-server": "^1.1",
+                "opis/closure": "^4.0",
                 "php": "^8.3",
                 "psr/event-dispatcher": "^1.0",
                 "psr/http-message": "^2.0",
@@ -61,7 +62,7 @@
                 "issues": "https://github.com/darkenphp/framework/issues",
                 "source": "https://github.com/darkenphp/framework/tree/main"
             },
-            "time": "2025-01-01T07:44:19+00:00"
+            "time": "2025-01-01T19:15:02+00:00"
         },
         {
             "name": "filp/whoops",
@@ -335,6 +336,70 @@
                 }
             ],
             "time": "2023-11-08T09:30:43+00:00"
+        },
+        {
+            "name": "opis/closure",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/closure.git",
+                "reference": "db44177485cedcf5bbac186c98a61cd07703f2a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/closure/zipball/db44177485cedcf5bbac186c98a61cd07703f2a3",
+                "reference": "db44177485cedcf5bbac186c98a61cd07703f2a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "A library that can be used to serialize closures (anonymous functions) and arbitrary data.",
+            "homepage": "https://opis.io/closure",
+            "keywords": [
+                "anonymous functions",
+                "closure",
+                "function",
+                "serializable",
+                "serialization",
+                "serialize"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/closure/issues",
+                "source": "https://github.com/opis/closure/tree/4.0.0"
+            },
+            "time": "2024-12-28T21:45:16+00:00"
         },
         {
             "name": "psr/event-dispatcher",

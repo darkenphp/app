@@ -5,6 +5,12 @@ namespace App;
 use Darken\Config\BaseConfig;
 use Darken\Service\ContainerService;
 use Darken\Service\ContainerServiceInterface;
+use Darken\Service\EventService;
+use Darken\Service\EventServiceInterface;
+use Darken\Service\ExtensionService;
+use Darken\Service\ExtensionServiceInterface;
+use Darken\Service\MiddlewareService;
+use Darken\Service\MiddlewareServiceInterface;
 
 /**
  * Config class implementing configuration and dependency injection management.
@@ -13,7 +19,7 @@ use Darken\Service\ContainerServiceInterface;
  * services for dependency injection. It uses environment variables to customize
  * various aspects of the application setup.
  */
-class Config extends BaseConfig implements ContainerServiceInterface
+class Config extends BaseConfig implements ContainerServiceInterface, EventServiceInterface, ExtensionServiceInterface, MiddlewareServiceInterface
 {
     /**
      * Initialize the configuration class and load the environment file.
@@ -29,7 +35,7 @@ class Config extends BaseConfig implements ContainerServiceInterface
      * Use this method to register services or objects into the DI container,
      * making them available for injection into other components or pages.
      * 
-     * If no services are required, this method and the ContainerServiceInterface
+     * If no services are required, this method and the `ContainerServiceInterface`
      * can be safely removed.
      */
     public function containers(ContainerService $service): ContainerService
@@ -39,6 +45,39 @@ class Config extends BaseConfig implements ContainerServiceInterface
                 apiToken: $this->env('BLOGS_API_TOKEN', 'localhost')
             )
         );
+    }
+
+    /**
+     * Register an event you like to listen to.
+     * 
+     * If no events are required, this method and the `EventServiceInterface`
+     * can be safely removed.
+     */
+    public function events(EventService $service): EventService
+    {
+        return $service;
+    }
+
+    /**
+     * Register extensions to be used in the application.
+     * 
+     * If no extensions are required, this method and the `ExtensionServiceInterface`
+     * can be safely removed.
+     */
+    public function extensions(ExtensionService $service): ExtensionService
+    {
+        return $service;
+    }
+
+    /**
+     * Register application wide middlewares.
+     * 
+     * If no middlewares are required, this method and the `MiddlewareServiceInterface`
+     * can be safely removed.
+     */
+    public function middlewares(MiddlewareService $service): MiddlewareService
+    {
+        return $service;
     }
 
     /**
