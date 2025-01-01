@@ -2,8 +2,7 @@
 
 namespace App;
 
-use Darken\Config\ConfigHelperTrait;
-use Darken\Config\ConfigInterface;
+use Darken\Config\BaseConfig;
 use Darken\Service\ContainerService;
 use Darken\Service\ContainerServiceInterface;
 
@@ -14,10 +13,8 @@ use Darken\Service\ContainerServiceInterface;
  * services for dependency injection. It uses environment variables to customize
  * various aspects of the application setup.
  */
-class Config implements ConfigInterface, ContainerServiceInterface
+class Config extends BaseConfig implements ContainerServiceInterface
 {
-    use ConfigHelperTrait;
-
     /**
      * Initialize the configuration class and load the environment file.
      */
