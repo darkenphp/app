@@ -10,5 +10,6 @@ include __DIR__ . '/../vendor/autoload.php';
 $config = new Config(
     rootDirectoryPath: dirname(__DIR__),
 );
+
 (new Application($config))
     ->run();
