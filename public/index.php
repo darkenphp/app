@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-use App\Db;
 use App\Config;
 use Darken\Web\Application;
 

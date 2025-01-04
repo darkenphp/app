@@ -7,5 +7,5 @@ use Build\components\Layout;
     <p style="margin-bottom: 20px;">
         Darken is a PHP framework that allows you to build web applications using components.
     </p>
-    <?= new Alert('Wow, this is amazing?!'); ?>
+    <?= new Alert('I am the "pages/index.php" file.'); ?>
 <?= $layout->closeContent(); ?>

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/darkenphp/framework.git",
-                "reference": "7460f1f74b61d3878d9b0ab9e96cea5e8d6b4cd6"
+                "reference": "19eb9a2521e4ee35076f97a723982cc6ad3f05c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darkenphp/framework/zipball/7460f1f74b61d3878d9b0ab9e96cea5e8d6b4cd6",
-                "reference": "7460f1f74b61d3878d9b0ab9e96cea5e8d6b4cd6",
+                "url": "https://api.github.com/repos/darkenphp/framework/zipball/19eb9a2521e4ee35076f97a723982cc6ad3f05c7",
+                "reference": "19eb9a2521e4ee35076f97a723982cc6ad3f05c7",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "issues": "https://github.com/darkenphp/framework/issues",
                 "source": "https://github.com/darkenphp/framework/tree/main"
             },
-            "time": "2025-01-02T16:22:50+00:00"
+            "time": "2025-01-03T15:14:02+00:00"
         },
         {
             "name": "filp/whoops",

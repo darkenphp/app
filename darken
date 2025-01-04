@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use Darken\Console\Application;
 use App\Config;
+use Darken\Console\Application;
 
 require __DIR__ . '/vendor/autoload.php';
 

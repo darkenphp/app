@@ -1,5 +1,6 @@
 <?php
 $layout = new class {
+    
     #[\Darken\Attributes\ConstructorParam]
     public $title;
 
@@ -18,13 +19,11 @@ $layout = new class {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $layout->title; ?></title>
-    <!-- Google Fonts for Modern Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Navigation Bar -->
         <nav>
             <div class="logo">Darken</div>
             <ul>
@@ -32,16 +31,12 @@ $layout = new class {
                 <li><a href="/blogs">Blogs</a></li>
             </ul>
         </nav>
-
-        <!-- Splash Screen Content -->
         <div class="content">
             <?= $layout->content; ?>
         </div>
-
-    <!-- Footer Section -->
-    <footer style="padding: 15px 40px; text-align: center; color: #cccccc; font-size: 0.9rem;">
-        &copy; <?= $layout->getYear(); ?> Darken. All rights reserved.
-    </footer>
+        <footer style="padding: 15px 40px; text-align: center; color: #cccccc; font-size: 0.9rem;">
+            &copy; <?= $layout->getYear(); ?> Darken. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>

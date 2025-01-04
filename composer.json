@@ -13,8 +13,8 @@
         }
     },
     "scripts": {
-        "dev": "@php darken dev",
-        "build": "@php darken build",
+        "dev": "@php darken dev --port=8019",
+        "build": "@php darken build --clear",
         "watch": "@php darken watch",
         "kill" : "kill $(ps aux | grep '[p]hp' | awk '{print $2}')",
         "vercel": [
