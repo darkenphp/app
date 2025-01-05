@@ -10,5 +10,7 @@ $config = new Config(
     rootDirectoryPath: getcwd(),
 );
 
-(new Application($config))
+$exitCode = (new Application($config))
     ->run();
+
+exit($exitCode);

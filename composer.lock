@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/darkenphp/framework.git",
-                "reference": "19eb9a2521e4ee35076f97a723982cc6ad3f05c7"
+                "reference": "00519736d0c80dfdd1e20ee30bfedeb2bf498ec7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darkenphp/framework/zipball/19eb9a2521e4ee35076f97a723982cc6ad3f05c7",
-                "reference": "19eb9a2521e4ee35076f97a723982cc6ad3f05c7",
+                "url": "https://api.github.com/repos/darkenphp/framework/zipball/00519736d0c80dfdd1e20ee30bfedeb2bf498ec7",
+                "reference": "00519736d0c80dfdd1e20ee30bfedeb2bf498ec7",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "issues": "https://github.com/darkenphp/framework/issues",
                 "source": "https://github.com/darkenphp/framework/tree/main"
             },
-            "time": "2025-01-03T15:14:02+00:00"
+            "time": "2025-01-05T19:43:19+00:00"
         },
         {
             "name": "filp/whoops",
@@ -339,16 +339,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "db44177485cedcf5bbac186c98a61cd07703f2a3"
+                "reference": "847d3c2031276cb67a45d1cf43233ef75300d6ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/db44177485cedcf5bbac186c98a61cd07703f2a3",
-                "reference": "db44177485cedcf5bbac186c98a61cd07703f2a3",
+                "url": "https://api.github.com/repos/opis/closure/zipball/847d3c2031276cb67a45d1cf43233ef75300d6ef",
+                "reference": "847d3c2031276cb67a45d1cf43233ef75300d6ef",
                 "shasum": ""
             },
             "require": {
@@ -397,9 +397,9 @@
             ],
             "support": {
                 "issues": "https://github.com/opis/closure/issues",
-                "source": "https://github.com/opis/closure/tree/4.0.0"
+                "source": "https://github.com/opis/closure/tree/4.1.0"
             },
-            "time": "2024-12-28T21:45:16+00:00"
+            "time": "2025-01-04T22:41:37+00:00"
         },
         {
             "name": "psr/event-dispatcher",
