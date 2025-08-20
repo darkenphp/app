@@ -41,7 +41,7 @@ class Config extends BaseConfig implements ContainerServiceInterface, EventServi
     public function containers(ContainerService $service): ContainerService
     {
         return $service
-            ->register(new BlogsData(
+            ->register(BlogsData::class, new BlogsData(
                 apiToken: $this->env('BLOGS_API_TOKEN', 'localhost')
             )
         );
