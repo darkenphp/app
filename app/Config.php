@@ -3,6 +3,8 @@
 namespace App;
 
 use Darken\Config\BaseConfig;
+use Darken\Debugbar\Build\Extension;
+use Darken\Debugbar\DebugBarConfig;
 use Darken\Service\ContainerService;
 use Darken\Service\ContainerServiceInterface;
 use Darken\Service\EventService;
@@ -66,7 +68,10 @@ class Config extends BaseConfig implements ContainerServiceInterface, EventServi
      */
     public function extensions(ExtensionService $service): ExtensionService
     {
-        return $service;
+        return $service
+            ->register(new Extension(new DebugBarConfig(
+                isActive: $this->getDebugMode()
+            )));
     }
 
     /**
